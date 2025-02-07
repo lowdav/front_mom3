@@ -1,0 +1,28 @@
+
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, main, footer{
+    padding: 0 20px;
+}
+
+header {
+    background-color: aqua;
+}
+
+main{
+    background-color: bisque;
+    flex: 1;
+}
+
+footer{
+    background-color: brown;
+}
