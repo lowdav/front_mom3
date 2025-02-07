@@ -1,0 +1,27 @@
+@use '/src/css/sass/abstracts/variables' as *;
+
+h1, h2, h3, h4, h5, h6{
+    color: $headlinecolor;
+    font-family: 'Chango', sans-serif;
+
+}
+
+p{
+    color: $textcolor;
+    font-family: 'Valera', sans-serif;
+}
+
+a {
+    font-family: 'Valera', sans-serif;
+    color: $linkcolor;
+}
+
+a:visited{
+    color: $linkcolor;
+}
+
+.links {
+    li a:hover {
+    border-bottom: 3px dotted $linksactive;
+    color: $linksactive;
+}}

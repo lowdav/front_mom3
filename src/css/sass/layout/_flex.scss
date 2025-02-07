@@ -1,4 +1,6 @@
+@use '/src/css/sass/abstracts/variables' as *;
 
+//Huvudsaklig layout, ser till att main tar upp allt ledigt utrymme
 html, body{
     height: 100%;
 }
@@ -15,14 +17,14 @@ header, main, footer{
 }
 
 header {
-    background-color: aqua;
+    background-color: $hfbkgcolor;
 }
 
 main{
-    background-color: bisque;
+    background-color: $mainbkgcolor;
     flex: 1;
 }
 
 footer{
-    background-color: brown;
+    background-color: $hfbkgcolor;
 }

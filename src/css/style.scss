@@ -1,9 +1,8 @@
 @use '/src/css/sass/base/test';
 @use '/src/css/sass/layout/nav.scss';
 @use '/src/css/sass/layout/flex.scss';
+@use '/src/css/sass/abstracts/variables';
+@use '/src/css/sass/base/typography';
+@use '/src/css/sass/vendors/fonts';
 
 @import "../../node_modules/normalize.css/normalize.css";
-
-/* Impoterar Google font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
