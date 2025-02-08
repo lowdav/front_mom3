@@ -2,17 +2,16 @@
 
 h1, h2, h3, h4, h5, h6{
     color: $headlinecolor;
-    font-family: 'Chango', sans-serif;
-
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p{
     color: $textcolor;
-    font-family: 'Valera', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a {
-    font-family: 'Valera', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: $linkcolor;
 }
 
@@ -20,8 +19,65 @@ a:visited{
     color: $linkcolor;
 }
 
+//testar nestling
 .links {
     li a:hover {
     border-bottom: 3px dotted $linksactive;
     color: $linksactive;
 }}
+
+
+//Mediaquery för dark theme
+
+@media (prefers-color-scheme: dark){
+
+    html{
+        background-color: $dark_mainbkgcolor;
+    }
+
+    header {
+        background-color: $dark_hfbkgcolor
+    }
+    
+    main{
+        background-color: $dark_mainbkgcolor;
+    }
+    
+    footer{
+        background-color: $dark_hfbkgcolor;
+    }
+    
+
+    h1, h2, h3, h4, h5, h6{
+        color: $dark_headlinecolor;
+    }
+    
+    p{
+        color: $dark_textcolor;
+    }
+    
+    a {
+        color: $dark_linkcolor;
+    }
+    
+    a:visited{
+        color: $dark_linkcolor;
+    }
+    
+    //testar nestling
+    .links {
+        li a:hover {
+        border-bottom: 3px dotted $dark_linksactive;
+        color: $dark_linksactive;
+    }}
+
+    //OBS nedan hör till nav
+
+    .bar {
+        background-color: $dark_navbarscolor;
+    }
+
+    nav {
+        background-color: $dark_mainbkgcolor;
+    }
+}
