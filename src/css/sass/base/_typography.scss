@@ -1,3 +1,5 @@
+//Styling fonter och länkar
+
 @use '/src/css/sass/abstracts/variables' as *;
 
 h1, h2, h3, h4, h5, h6{
@@ -23,7 +25,7 @@ a:visited{
 .links {
     li a:hover {
     border-bottom: 3px dotted $linksactive;
-    color: $linksactive;
+    color: darken($linkcolor, 50%);
 }}
 
 
@@ -68,7 +70,7 @@ a:visited{
     .links {
         li a:hover {
         border-bottom: 3px dotted $dark_linksactive;
-        color: $dark_linksactive;
+        color: lighten($dark_linkcolor, 50%);
     }}
 
     //OBS nedan hör till nav

@@ -1,0 +1,19 @@
+//Testar mixin för att skapa en knapp
+
+@use '/src/css/sass/abstracts/variables' as *;
+
+@mixin button($bgcolor, $textcolor) {
+    padding: 12px 24px;
+    background-color: $bgcolor;
+    border: 1px solid darken($bgcolor, 40%);
+    color: $textcolor;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button{
+    @include button($bgcolor: $buttoncolor, $textcolor: white);
+    display: block;
+    margin: auto;
+}
