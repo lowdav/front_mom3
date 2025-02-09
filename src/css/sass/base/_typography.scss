@@ -2,9 +2,18 @@
 
 @use '/src/css/sass/abstracts/variables' as *;
 
+html{
+    line-height: 1.4;
+}
+
 h1, h2, h3, h4, h5, h6{
     color: $headlinecolor;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.1rem;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+    margin-top: 0.2rem;
 }
 
 p{
@@ -13,7 +22,8 @@ p{
 }
 
 a {
-    font-family: 'Poppoins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bungee Tint', 'Montserrat', sans-serif;
     color: $linkcolor;
 }
 
@@ -80,6 +90,6 @@ a:visited{
     }
 
     nav {
-        background-color: $dark_mainbkgcolor;
+        background-color: $dark_hfbkgcolor;
     }
 }
